@@ -204,6 +204,7 @@ a{
     z-index: 989797979;
     display: flex;
     transition: .2s;
+    pointer-events: none;
 }
 
 body[data-docs-loaded="true"] #loading_page{
