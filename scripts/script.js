@@ -1,5 +1,11 @@
 
 const body = document.getElementById('body');
+const loading_page = document.getElementById('loading_page')
+
+body.dataset.docsLoaded = "true"
+
+
+
 
 const headerTitle = document.getElementById('header_title');
 const bodySlider = document.getElementById('body_slider')
