@@ -204,6 +204,7 @@ a{
     z-index: 989797979;
     display: flex;
     transition: .2s;
+    pointer-events: none;
 }
 
 body[data-docs-loaded="true"] #loading_page{
@@ -2911,9 +2912,19 @@ body[data-current-page="7"] #v_slider_box{
 
 @media (max-width: 700px){
 
-    /* #body_slider{
+    #body_slider{
         transition: none;
-    } */
+    
+    }
+    .p_page{
+        transition: none;
+    }
+    #main_video_link{
+        transition: none;
+    }
+    #v_slider_box{
+        transition: none;
+    }
 
     body{
         height: 1430vh;
