@@ -6,13 +6,16 @@ body.dataset.docsLoaded = "true"
 
 
 
-
 const headerTitle = document.getElementById('header_title');
 const bodySlider = document.getElementById('body_slider')
 const heroText = document.getElementsByClassName('hero_text')
 
 const pageLoader = document.getElementById('page_loader');
 const links = document.getElementsByTagName('a'); 
+
+
+const header_title_text = document.getElementsByClassName('header_title_text');
+
 
 
 window.scrollTo(0,0);
@@ -239,6 +242,12 @@ const ataCheck = () => {
 }
 
 ataCheck()
+
+console.log(header_title_text)
+
+if(body.classList.contains("success-body")){
+    header_title_text[0].innerHTML += `<img src="../media/ok.png" alt="">`
+}
 
 
 
