@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azirle | Digital Agency</title>
+    <link rel="shortcut icon" href="../media/azirle_webicon_comp.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/style.css">
     <script src="../scripts/script.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -61,7 +62,14 @@
         <div class="lp_dec">Azirle</div>
         <div class="lp_loader"><span></span></div>
     </div>
-    <div id="mouse_follower"></div>
+    <div id="mouse_follower">
+        <div class="mf_hid_text mfht_close">
+            Close
+        </div>
+        <div class="mf_hid_text mfht_play">
+            Play
+        </div>
+    </div>
     <div class="comp_name_cap a3 ad1">
         <a data-href="index.html">Azirle</a>
     </div>
@@ -146,7 +154,6 @@
         </div>
         <div class="menu_left_box unresp">
             <div class="menu_dec_box ad05" id="menu_dec_box">
-                <img id="menu_dec_img" class="ad15" src="../media/imgtest.jpg" alt="">
                 <div id="menu_dec_text" class="ad1">
                     Vision
                 </div>
@@ -159,10 +166,10 @@
     <div id="menu_bg"></div>
     <div id="main_video">
         <div class="main_vid_box">
-            <div id="mv_close_btn">
-                X
-            </div>
-            <video src="../media/video1.mp4" controls></video>
+            <!-- <div id="mv_close_btn">
+                <img src="../media/icons/close.svg" alt="">
+            </div> -->
+            <video id="main_video_vid" src="../media/AzirleVID.mp4" loop></video>
         </div>
     </div>
     <div class="header_center_box">
@@ -241,12 +248,11 @@
             </div>
         </div>
         <div class="page" id="page2">
-            <video id="main_video_link" src="../media/video1.mp4" autoplay loop muted class="movingMedia" data-movmed-page="3"></video>
+            <video id="main_video_link" src="../media/AzirleVID.mp4" autoplay loop muted class="movingMedia" data-movmed-page="3"></video>
         </div>
         <div class="page" id="page3">
             <div class="page_dec">
                 <span>01. about us</span>
-                <div class="atl" data-atl="a6" data-atlpage="4"></div>
             </div>
             <div class="p3_title">
                 <div class="p3t_left">
@@ -261,9 +267,9 @@
             </div>
             <div class="p3_box">
                 <div class="p3box_hb p3hb_img" >
-                    <img src="../media/workplace.jpg" alt="" class="atl ad05" data-atl="a6" data-atlpage="4">
+                    <img src="../media/workplace.jpg" alt="" class="atl ad15" data-atl="a6" data-atlpage="4">
                 </div>
-                <div class="p3box_hb p3hb_text atl ad1" data-atl="a4" data-atlpage="4">
+                <div class="p3box_hb p3hb_text atl ad2" data-atl="a4" data-atlpage="4">
                     Hi! We are Azirle - a team of digital designers aiming on creating, developing and realizing digital products of high quality
                 </div>
             </div>
@@ -313,7 +319,7 @@
         </div>
         <div class="page" id="page5">
             <div class="p5_content">
-                <div class="p5_box atl" data-atl="a4" data-atlpage="7" id="p5box1" data-pbox-open="false">
+                <div class="p5_box atl" data-atl="a4" data-atlpage="7" id="p5box1">
                     <div class="p5b_bg">
                         <img src="../media/brand.jpg" alt="">
                     </div>
@@ -323,13 +329,16 @@
                         <span>We can help you with the rebranding! Sometimes companies make difficult decisions trying to change something in their brand. So our mission is to take your brand to the next level.</span>
                     </div>
                     <div class="p5b_lm">
-                        Learn More
+                        <!-- Learn More -->
+                    </div>
+                    <div class="p5b_lm">
+                        <!-- Learn More -->
                     </div>
                     <div class="p5b_gb">
                         Back
                     </div>
                 </div>
-                <div class="p5_box atl ad01" data-atl="a4" data-atlpage="7" id="p5box2" data-pbox-open="false">
+                <div class="p5_box atl ad01" data-atl="a4" data-atlpage="7" id="p5box2" >
                     <div class="p5b_bg">
                         <img src="../media/website.jpg" alt="">
                     </div>
@@ -339,13 +348,13 @@
                         <span>Websites can tell a lot about your brand. We create best websites to describe your products in the best ways possible.  </span>
                     </div>
                     <div class="p5b_lm">
-                        Learn More
+                        <!-- Learn More -->
                     </div>
                     <div class="p5b_gb">
                         Back
                     </div>
                 </div>
-                <div class="p5_box atl ad02" data-atl="a4" data-atlpage="7" id="p5box3" data-pbox-open="false">
+                <div class="p5_box atl ad02" data-atl="a4" data-atlpage="7" id="p5box3">
                     <div class="p5b_bg">
                         <img src="../media/abs2.jpg" alt="">
                     </div>
@@ -355,13 +364,13 @@
                         <span>Visual Identity is logo, poster and even business card, anything that makes people recognize your brand. We will help you with your brand`s visual identity.</span>
                     </div>
                     <div class="p5b_lm">
-                        Learn More
+                        <!-- Learn More -->
                     </div>
                     <div class="p5b_gb">
                         Back
                     </div>
                 </div>
-                <div class="p5_box atl ad03" data-atl="a4" data-atlpage="7" id="p5box4" data-pbox-open="false">
+                <div class="p5_box atl ad03" data-atl="a4" data-atlpage="7" id="p5box4">
                     <div class="p5b_bg">
                         <img src="../media/marketing.jpg" alt="">
                     </div>
@@ -371,7 +380,7 @@
                         <span>If you are thinking about how your business should go or what marketing strategies can help your brand stand out we can help you out with it!</span>
                     </div>
                     <div class="p5b_lm">
-                        Learn More
+                        <!-- Learn More -->
                     </div>
                     <div class="p5b_gb">
                         Back
@@ -412,7 +421,7 @@
                 </div>
             </div>
             <div class="p7_h_box">
-                <form id="send_form" action="https://formsubmit.co/aidynbulatov@gmail.com" method="POST">
+                <form id="send_form" action="https://formsubmit.co/azirleinfo@gmail.com" method="POST">
 
                     <!-- HoneyPot -->
 
@@ -422,7 +431,7 @@
 
                     <input type="hidden" name="_captcha" value="false">
 
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/success.html">
+                    <!-- <input id="formSubNext" type="hidden" name="_next" value="http://127.0.0.1:5500/pages/success.html"> -->
 
                     <div class="sf_inp_box">
                         <label for="name_inp">Name</label>
@@ -440,7 +449,7 @@
                         <label for="request">Request</label>
                         <textarea name="request" id="request_inp" rows="5" cols="10" wrap="soft" placeholder="I want..."></textarea>
                     </div>
-                    <input type="submit" class="button"  value="Send">
+                    <input id="form_submit_btn" type="submit" class="button"  value="Send">
                 </form>
             </div>
         </div>
@@ -473,18 +482,18 @@
                     </div>
                     <div class="foo_tb_list">
                         <a href="">Tel: +7 777 777 77 77</a>
-                        <a href="">Email: azirleinfo@gmail.com</a>
                     </div>
                 </div>
             </div>
             <div class="foo_column">
                 <div class="foo_textbox">
                     <div class="foo_tb_title">
-                        Contacts
+                        Social Links
                     </div>
                     <div class="foo_tb_list">
-                        <a href="">Tel: +7 777 777 77 77</a>
-                        <a href="">Email: azirleinfo@gmail.com</a>
+                        <a href="">Instagramm</a>
+                        <a href="">Youtube</a>
+                        <a href="">Telegram</a>
                     </div>
                 </div>
             </div>
@@ -521,19 +530,22 @@
                     Contacts
                 </div>
                 <div class="foo_tb_list">
-                    <a href="">Tel: +7 777 777 77 77</a>
-                    <a href="">Email: azirleinfo@gmail.com</a>
+                    <a>Tel: +7 771 668 38 10</a>
+                    <a href="mailto:azirleinfo@gmail.com">azirleinfo@gmail.com</a>
                 </div>
             </div>
         </div>
         <div class="foo_column">
             <div class="foo_textbox">
                 <div class="foo_tb_title">
-                    Contacts
+                    Social Links
                 </div>
                 <div class="foo_tb_list">
-                    <a href="">Tel: +7 777 777 77 77</a>
-                    <a href="">Email: azirleinfo@gmail.com</a>
+                <a href="https://www.instagram.com/a.zirle/" target="_blank">Instagram</a>
+                <a href="" target="_blank">Dribble</a>
+                <a href="https://web.telegram.org/a/#8159490690" target="_blank">Telegram</a>
+                <a href="#" target="_blank">GitHub</a>
+                <a href="https://www.youtube.com/@Azirle" target="_blank">Youtube</a>
                 </div>
             </div>
         </div>

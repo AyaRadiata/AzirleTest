@@ -69,8 +69,8 @@ menuIcon.addEventListener('click', ()=>{
         menu_dec_box.classList.remove('a2r')
         menu_dec_text.classList.add('a4')
         menu_dec_text.classList.add('ad1')
-        menu_dec_img.classList.add('a4')
-        menu_dec_img.classList.add('ad15')
+        // menu_dec_img.classList.add('a4')
+        // menu_dec_img.classList.add('ad15')
         menu_dec_box.classList.add('a4')
         menu_dec_box.classList.add('ad05')
         menu_dec_mini_text_resp.classList.add('a4')
@@ -82,8 +82,8 @@ menuIcon.addEventListener('click', ()=>{
     } else {
         menu_dec_text.classList.remove('a4')
         menu_dec_text.classList.remove('ad1')
-        menu_dec_img.classList.remove('a4')
-        menu_dec_img.classList.remove('ad15')
+        // menu_dec_img.classList.remove('a4')
+        // menu_dec_img.classList.remove('ad15')
         menu_dec_box.classList.remove('a4')
         menu_dec_box.classList.remove('ad05')
         menu_dec_mini_text_resp.classList.remove('a4')
@@ -103,6 +103,18 @@ for (const element of menunav_links) {
     element.addEventListener("mouseover", ()=>{
         menu_dec_text.innerText = element.innerText
         menu_dec_text.dataset.text = `${element.innerText}`
+        if(element.innerText == 'ABOUT US'){
+            menu_dec_text.innerText = 'ABOUT'
+        }
+        if(element.innerText == 'OUR VISION'){
+            menu_dec_text.innerText = 'VISION'
+        }
+        if(element.innerText == 'OUR TEAM'){
+            menu_dec_text.innerText = 'TEAM'
+        }
+        if(element.innerText == 'CONTACT US'){
+            menu_dec_text.innerText = 'CONTACTS'
+        }
     })
 }
 
@@ -123,8 +135,6 @@ for (let index = 0; index < caras.length; index++) {
 }
 
 
-
-
 const mf = document.getElementById('mouse_follower');
 
 window.addEventListener('mousemove', (e) => {
@@ -135,7 +145,9 @@ window.addEventListener('mousemove', (e) => {
     cY = cY - mf.offsetHeight/2
 
     mf.style.cssText = `transform: translate(${cX}px, ${cY}px)`
+
 })
+
 
 var prevSY = 0
 var sDirection = 1
@@ -243,8 +255,6 @@ const ataCheck = () => {
 
 ataCheck()
 
-console.log(header_title_text)
-
 if(body.classList.contains("success-body")){
     header_title_text[0].innerHTML += `<img src="../media/ok.png" alt="">`
 }
@@ -297,39 +307,49 @@ window.addEventListener('scroll', (e)=>{
 
 const main_video_link = document.getElementById('main_video_link');
 const mv_close_btn = document.getElementById('mv_close_btn');
+const main_video_vid = document.getElementById('main_video_vid')
 
 if(main_video_link){
     main_video_link.addEventListener('click', ()=>{
         body.dataset.mainvidOpen = `true`
+        main_video_vid.play()
     })
-    mv_close_btn.addEventListener('click', ()=>{
+    main_video_vid.addEventListener('click', ()=>{
         body.dataset.mainvidOpen = `false`
+        main_video_vid.pause()
     })
 }
 
-const p5_boxes = document.getElementsByClassName('p5_box')
-const p5b_gbs = document.getElementsByClassName('p5b_gb');
 
-var p5bCanopen = true
 
-for (let index = 0; index < p5_boxes.length; index++) {
-    const p5_box = p5_boxes[index];
-    const p5b_gb = p5b_gbs[index];
-    p5_box.addEventListener('click', ()=>{
-        if(p5bCanopen){
-            p5_box.dataset.pboxOpen = `true`
-            p5bCanopen = false
-        }
-    })
-    p5b_gb.addEventListener('click', ()=>{
-        console.log("d")
-        p5_box.dataset.pboxOpen = `false`
-        setTimeout(()=>{
-            p5bCanopen = true
-        }, 500)
+document.addEventListener('visibilitychange', (e)=>{
+    main_video_vid.pause()
+})
+
+
+// const p5_boxes = document.getElementsByClassName('p5_box')
+// const p5b_gbs = document.getElementsByClassName('p5b_gb');
+
+// var p5bCanopen = true
+
+// for (let index = 0; index < p5_boxes.length; index++) {
+//     const p5_box = p5_boxes[index];
+//     const p5b_gb = p5b_gbs[index];
+//     p5_box.addEventListener('click', ()=>{
+//         if(p5bCanopen){
+//             p5_box.dataset.pboxOpen = `true`
+//             p5bCanopen = false
+//         }
+//     })
+//     p5b_gb.addEventListener('click', ()=>{
+//         console.log("d")
+//         p5_box.dataset.pboxOpen = `false`
+//         setTimeout(()=>{
+//             p5bCanopen = true
+//         }, 500)
         
-    })
-}
+//     })
+// }
 
 const p6w_slider = document.getElementsByClassName('p6w_slider');
 
@@ -416,3 +436,17 @@ if(p_pages[0]){
 }
 
 
+const form_submit_btn = document.getElementById('form_submit_btn');
+const formSubNext = document.getElementById('formSubNext')
+
+currentLocationURL = window.location.href
+currentLocationURLArr = window.location.href.split("/")
+newLocationURL = ""
+for (let index = 0; index < currentLocationURLArr.length; index++) {
+    const path = currentLocationURLArr[index];
+    newLocationURL += path + "/"
+}
+newLocationURL += "success.html"
+console.log(newLocationURL)
+
+formSubNext.setAttribute('value', newLocationURL)

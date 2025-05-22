@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azirle | Digital Agency</title>
+    <link rel="shortcut icon" href="../media/azirle_webicon_comp.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/style.css">
     <script src="../scripts/script.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -99,7 +100,6 @@
         </div>
         <div class="menu_left_box unresp">
             <div class="menu_dec_box ad05" id="menu_dec_box">
-                <img id="menu_dec_img" class="ad15" src="../media/imgtest.jpg" alt="">
                 <div id="menu_dec_text" class="ad1">
                     Vision
                 </div>
@@ -128,11 +128,11 @@
                 <div class="atl" data-atl="a6" data-atlpage="1"></div>
             </div>
             <div class="cp1_box">
-                <a href="#" class="cp1_link atl" data-atl="a1" data-atlpage="1">Instagram</a>
-                <a href="#" class="cp1_link atl" data-atl="a1" data-atlpage="1">Dribble</a>
-                <a href="#" class="cp1_link atl" data-atl="a1" data-atlpage="1">Telegram</a>
-                <a href="#" class="cp1_link atl" data-atl="a1" data-atlpage="1">GitHub</a>
-                <a href="#" class="cp1_link atl" data-atl="a1" data-atlpage="1">Youtube</a>
+                <a href="https://www.instagram.com/a.zirle/" target="_blank" class="cp1_link atl" data-atl="a1" data-atlpage="1">Instagram</a>
+                <a href="" target="_blank" class="cp1_link atl" data-atl="a1" data-atlpage="1">Dribble</a>
+                <a href="https://web.telegram.org/a/#8159490690" target="_blank" class="cp1_link atl" data-atl="a1" data-atlpage="1">Telegram</a>
+                <a href="#" target="_blank" class="cp1_link atl" data-atl="a1" data-atlpage="1">GitHub</a>
+                <a href="https://www.youtube.com/@Azirle" target="_blank" class="cp1_link atl" data-atl="a1" data-atlpage="1">Youtube</a>
             </div>
             <div class="page_dec_end">
                 <div class="atl" data-atl="a6" data-atlpage="2"></div>
@@ -146,7 +146,18 @@
                 </div>
             </div>
             <div class="p7_h_box">
-                <form id="send_form">
+                <form id="send_form" action="https://formsubmit.co/azirleinfo@gmail.com" method="POST">
+
+                    <!-- HoneyPot -->
+
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <!-- Captcha -->
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <!-- <input id="formSubNext" type="hidden" name="_next" value="http://127.0.0.1:5500/pages/success.html"> -->
+
                     <div class="sf_inp_box">
                         <label for="name_inp">Name</label>
                         <input placeholder="Your Name" type="text" name="name" id="name_inp">
@@ -163,7 +174,7 @@
                         <label for="request">Request</label>
                         <textarea name="request" id="request_inp" rows="5" cols="10" wrap="soft" placeholder="I want..."></textarea>
                     </div>
-                    <input type="submit" class="button"  value="Send">
+                    <input id="form_submit_btn" type="submit" class="button"  value="Send">
                 </form>
             </div>
         </div>
