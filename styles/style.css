@@ -3001,6 +3001,7 @@ body[data-current-page="7"] #v_slider_box{
     #menu{
         justify-content: center;
         align-items: center;
+        height: 100dvh;
     }
     #menu_nav{
         font-size: 2em;
@@ -3026,6 +3027,14 @@ body[data-current-page="7"] #v_slider_box{
         overflow-wrap: break-word;
     }
 
+
+    #headp1_dec{
+        overflow: visible;
+        height: 220dvh;
+    }
+    .hpd{
+        height: 110%;
+    }
     .hpd_text{
         width: 60vw;
         height: 60vw;
