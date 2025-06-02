@@ -425,9 +425,9 @@ if(p_pages[0]){
         console.log(sY, 110*vh)
         for (let index = 0; index < p_pages.length; index++) {
             const ppage = p_pages[index];
-            if(sY >= 110*vh*(index+1)){
+            if(sY >= 120*vh*(index+1)){
                 ppage.dataset.scrollWith="true"
-                ppage.style.transform = `translateY(${sY - 110*vh*(index+1)}px)`;
+                ppage.style.transform = `translateY(${sY - 120*vh*(index+1)}px)`;
             } else {
                 ppage.dataset.scrollWith="false"
             }
