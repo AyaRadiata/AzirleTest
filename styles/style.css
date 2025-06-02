@@ -2693,9 +2693,8 @@ body[data-current-page="7"] #v_slider_box{
     width: 100%;
     height: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     overflow: hidden;
-    
     align-items: center;
     border: 4px solid var(--secondary-color);
     border-radius: 20px;
@@ -2714,20 +2713,46 @@ body[data-current-page="7"] #v_slider_box{
     opacity: 0;
 }
 
-.pp_img_link:hover .pp_img{
-    scale: 1.1;
-    filter: brightness(0.3);
-}
 .pp_img_link:hover .pp_img_link_lm{
     opacity: 1;
 }
+.pp_img_link:hover .pp_img:nth-of-type(1){
+    transform: translateY(100px);
+}
+.pp_img_link:hover .pp_img:nth-of-type(2){
+    transform: translateY(-100px);
+}
+
+
 
 .pp_img{
-    width: 100%;
-    height: 100%;
+    width: 40%;
+    rotate: -30deg;
+    height: auto;
     position: relative;
     object-fit: cover;
     transition: var(--transition-cb);
+}
+
+.pp_link_bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 700%;
+    font-weight: 800;
+    z-index: 5555;
+    opacity: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    mix-blend-mode: difference;
+    transition: var(--transition-cb);
+}
+
+.pp_img_link:hover .pp_link_bg{
+    letter-spacing: .1em;
 }
 
 .pp_text{
@@ -3276,6 +3301,36 @@ body[data-current-page="7"] #v_slider_box{
     }
     .pp_img_link{
         height: 50%;
+        justify-content: center;
+        gap: 5em;
+    }
+
+
+    .pp_img{
+        width: 70%;
+        rotate: 0deg;
+        rotate: -10deg;
+        height: auto;
+        position: relative;
+        object-fit: cover;
+        transition: var(--transition-cb);
+    }
+
+    .pp_link_bg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        font-size: 200%;
+        font-weight: 800;
+        z-index: 5555;
+        opacity: 1;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        mix-blend-mode: difference;
+        transition: var(--transition-cb);
     }
 
     /* CONTACTS */

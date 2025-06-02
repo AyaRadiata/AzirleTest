@@ -327,29 +327,7 @@ document.addEventListener('visibilitychange', (e)=>{
 })
 
 
-// const p5_boxes = document.getElementsByClassName('p5_box')
-// const p5b_gbs = document.getElementsByClassName('p5b_gb');
 
-// var p5bCanopen = true
-
-// for (let index = 0; index < p5_boxes.length; index++) {
-//     const p5_box = p5_boxes[index];
-//     const p5b_gb = p5b_gbs[index];
-//     p5_box.addEventListener('click', ()=>{
-//         if(p5bCanopen){
-//             p5_box.dataset.pboxOpen = `true`
-//             p5bCanopen = false
-//         }
-//     })
-//     p5b_gb.addEventListener('click', ()=>{
-//         console.log("d")
-//         p5_box.dataset.pboxOpen = `false`
-//         setTimeout(()=>{
-//             p5bCanopen = true
-//         }, 500)
-        
-//     })
-// }
 
 const p6w_slider = document.getElementsByClassName('p6w_slider');
 
@@ -418,16 +396,21 @@ if(cp1_box[0]){
 
 const p_pages = document.getElementsByClassName('p_page');
 
+ppages_default_scroll_index = 110
+if(window.innerWidth <= 700){
+    ppages_default_scroll_index = 120
+}
+
+console.log(ppages_default_scroll_index)
 
 if(p_pages[0]){
     window.addEventListener('scroll', ()=>{
         sY = window.scrollY
-        console.log(sY, 110*vh)
         for (let index = 0; index < p_pages.length; index++) {
             const ppage = p_pages[index];
-            if(sY >= 120*vh*(index+1)){
+            if(sY >= ppages_default_scroll_index*vh*(index+1)){
                 ppage.dataset.scrollWith="true"
-                ppage.style.transform = `translateY(${sY - 120*vh*(index+1)}px)`;
+                ppage.style.transform = `translateY(${sY - ppages_default_scroll_index*vh*(index+1)}px)`;
             } else {
                 ppage.dataset.scrollWith="false"
             }
@@ -449,4 +432,7 @@ for (let index = 0; index < currentLocationURLArr.length; index++) {
 newLocationURL += "success.html"
 console.log(newLocationURL)
 
-formSubNext.setAttribute('value', newLocationURL)
+if(formSubNext){
+    formSubNext.setAttribute('value', newLocationURL)
+}
+
