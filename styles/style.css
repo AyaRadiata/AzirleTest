@@ -3311,7 +3311,10 @@ body[data-current-page="7"] #v_slider_box{
     }
     .p5b_out_text{
         width: 100%;
-        bottom: calc(var(--com-gap)*2);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .p5b_out_text > span:nth-of-type(1){
         padding: 5px;
@@ -3320,6 +3323,7 @@ body[data-current-page="7"] #v_slider_box{
     .p5b_out_text > span:nth-of-type(2){
         opacity: 0;
         padding-left: 5px;
+        display: none;
     }
     
     .p5b_out_text > span:nth-of-type(3){
