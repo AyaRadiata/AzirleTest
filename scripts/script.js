@@ -2,7 +2,11 @@
 const body = document.getElementById('body');
 const loading_page = document.getElementById('loading_page')
 
-body.dataset.docsLoaded = "true"
+
+
+window.addEventListener("load", ()=>{
+    body.dataset.docsLoaded = "true"
+})
 
 
 
@@ -93,6 +97,15 @@ menuIcon.addEventListener('click', ()=>{
         }
         menu_dec_box.classList.add('a2r')
     }
+
+    for (let index = 0; index < menunav_links.length; index++) {
+        const element = menunav_links[index];
+        element.addEventListener("mouseover", ()=>{
+            element.classList.remove('a2')
+            element.style.animationDelay = `0s`
+        })
+    }
+
     menuOpen = !menuOpen
     body.dataset.menuOpen = menuOpen
     
@@ -219,18 +232,15 @@ for (let index = 0; index < buttons.length; index++) {
 
         btn.style.transform = `translate(${-btnX*0.2}px, ${-btnY*0.2}px)`;
     })
+    btn.addEventListener('mousedown', ()=>{
+        btn.style.scale = `0.9`
+    })
+    btn.addEventListener('mouseup', ()=>{
+        btn.style.scale = `1`
+    })
 }
 
-const movingMedias = document.getElementsByClassName('movingMedia')
 
-window.addEventListener('scroll', ()=>{
-    sY = window.scrollY
-    for (const movmed of movingMedias) {
-        // if(movmed.dataset.movmedPage == body.dataset.currentPage)
-        // movmed.style.transform = `translateY(${sY/3 - 200*movmed.dataset.movmedPage}px)`
-        movmed.style.transform = `translateY(${sY/3 - winH}px)`
-    }
-})
 
 const ata = document.getElementsByClassName('ata')
 
@@ -308,6 +318,16 @@ window.addEventListener('scroll', (e)=>{
 const main_video_link = document.getElementById('main_video_link');
 const mv_close_btn = document.getElementById('mv_close_btn');
 const main_video_vid = document.getElementById('main_video_vid')
+
+const movingMedias = document.getElementsByClassName('movingMedia')
+
+window.addEventListener('scroll', ()=>{
+    let winH = window.innerHeight
+    sY = window.scrollY
+    for (const movmed of movingMedias) {
+        movmed.style.transform = `translateY(${winH*-1.1 + sY/3}px)`
+    }
+})
 
 if(main_video_link){
     main_video_link.addEventListener('click', ()=>{
@@ -419,20 +439,20 @@ if(p_pages[0]){
 }
 
 
-const form_submit_btn = document.getElementById('form_submit_btn');
-const formSubNext = document.getElementById('formSubNext')
+// const form_submit_btn = document.getElementById('form_submit_btn');
+// const formSubNext = document.getElementById('formSubNext')
 
-currentLocationURL = window.location.href
-currentLocationURLArr = window.location.href.split("/")
-newLocationURL = ""
-for (let index = 0; index < currentLocationURLArr.length; index++) {
-    const path = currentLocationURLArr[index];
-    newLocationURL += path + "/"
-}
-newLocationURL += "success.html"
-console.log(newLocationURL)
+// currentLocationURL = window.location.href
+// currentLocationURLArr = window.location.href.split("/")
+// newLocationURL = ""
+// for (let index = 0; index < currentLocationURLArr.length; index++) {
+//     const path = currentLocationURLArr[index];
+//     newLocationURL += path + "/"
+// }
+// newLocationURL += "success.html"
+// console.log(newLocationURL)
 
-if(formSubNext){
-    formSubNext.setAttribute('value', newLocationURL)
-}
+// if(formSubNext){
+//     formSubNext.setAttribute('value', newLocationURL)
+// }
 

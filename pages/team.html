@@ -27,6 +27,13 @@
             <ion-icon class="menu_menu_icon" name="menu-outline"></ion-icon>
             <ion-icon class="menu_close_icon" name="close-outline"></ion-icon>
         </div>
+        <div id="lang_switch">
+            <a data-href="index.html" class="lang_btn lang_btn_en" data-lang-btn="on">EN</a>
+            <a data-href="ru/index.html" class="lang_btn lang_btn_ru">RU</a>
+        </div>
+        <div id="lang_switch_resp">
+            <a data-href="ru/index.html" class="lang_btn" data-lang-btn="on">RU</a>
+        </div>
     </div>
     <div id="menu">
         <div class="menu_right_box">
@@ -184,7 +191,18 @@
                 </div>
             </div>
             <div class="p7_h_box">
-                <form id="send_form">
+                <form id="send_form" action="https://formsubmit.co/azirleinfo@gmail.com" method="POST">
+
+                    <!-- HoneyPot -->
+
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <!-- Captcha -->
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <!-- <input id="formSubNext" type="hidden" name="_next" value="http://127.0.0.1:5500/pages/success.html"> -->
+
                     <div class="sf_inp_box">
                         <label for="name_inp">Name</label>
                         <input placeholder="Your Name" type="text" name="name" id="name_inp">
@@ -201,7 +219,7 @@
                         <label for="request">Request</label>
                         <textarea name="request" id="request_inp" rows="5" cols="10" wrap="soft" placeholder="I want..."></textarea>
                     </div>
-                    <input type="submit" class="button"  value="Send">
+                    <input id="form_submit_btn" type="submit" class="button"  value="Send">
                 </form>
             </div>
         </div>
