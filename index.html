@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azirle | Digital Agency - Websites and SMM</title>
+    <link rel="shortcut icon" href="media/azirle_webicon_comp.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <meta name="description" content="We are a digital agency that makes digital products, websites, visual identity and SMM. Just tell us your idea and let us make it shine!">
+    <meta property="og:title" content="Azirle - Digital Agency">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://azirle.com/">
+    <style>
+        #loading_page{
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            z-index: 9898989898;
+            background: white;
+        }
+        @keyframes lp_loader {
+            0%{
+                width: 0%;
+                left: 0;
+                right: auto;
+            }
+            50%{
+                width: 100%;
+            }
+            100%{
+                width: 0%;
+                right: 0;
+                left: auto;
+            }
+        }
+        .lp_loader{
+            position: relative;
+            width: 20vw;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+        .lp_loader span{
+            position: absolute;
+            max-width: 20vw;
+            height: 3px;
+            background: black;
+            animation: lp_loader 1s ease-in-out both infinite;
+        }
+    </style>
+</head>
+<body id="body" class="index-body" data-menu-open="false" data-fooseen="false">
+    <div id="page_loader"></div>
+    <div id="loading_page">
+        <div class="lp_dec">Azirle</div>
+        <div class="lp_loader"><span></span></div>
+    </div>
+    <div id="mouse_follower">
+        <div class="mf_hid_text mfht_close">
+            Close
+        </div>
+        <div class="mf_hid_text mfht_play">
+            Play
+        </div>
+    </div>
+    <div class="comp_name_cap a3 ad1">
+        <a data-href="index.html">Azirle</a>
+    </div>
+    <div id="caption" class="a3 ad1">
+        <div id="menu_icon">
+            <span class="menu_menu_icon">Menu</span>
+            <span class="menu_close_icon">Close</span>
+            <ion-icon class="menu_menu_icon" name="menu-outline"></ion-icon>
+            <ion-icon class="menu_close_icon" name="close-outline"></ion-icon>
+        </div>
+        <div id="lang_switch">
+            <a data-href="index.html" class="lang_btn lang_btn_en" data-lang-btn="on">EN</a>
+            <a data-href="ru/index.html" class="lang_btn lang_btn_ru">RU</a>
+        </div>
+        <div id="lang_switch_resp">
+            <a data-href="ru/index.html" class="lang_btn" data-lang-btn="on">RU</a>
+        </div>
+    </div>
+    <div id="menu">
+        <div class="menu_right_box">
+            <div id="menu_nav">
+                <a class="menunav_link" data-href="index.html">About Us</a>
+                <a class="menunav_link" data-href="projects.html">Projects</a>
+                <a class="menunav_link" data-href="vision.html">Our Vision</a>
+                <a class="menunav_link" data-href="team.html">Our Team</a>
+                <a class="menunav_link" data-href="contacts.html">Contact Us</a>
+            </div>
+            <div id="menu_dec_mini_text_resp" class="resp ad1">
+                Azirle - is the company that will make your imaginations come true
+            </div>
+        </div>
+        <div id="menu_link_dec" class="unresp">
+            <div class="menu_ld caras">
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
+            </div>
+            <div class="menu_ld caras">
+                <span>Projects</span>
+                <span>Projects</span>
+                <span>Projects</span>
+                <span>Projects</span>
+                <span>Projects</span>
+                <span>Projects</span>
+                <span>Projects</span>
+                <span>Projects</span>
+                <span>Projects</span>
+            </div>
+            <div class="menu_ld caras">
+                <span>Vision</span>
+                <span>Vision</span>
+                <span>Vision</span>
+                <span>Vision</span>
+                <span>Vision</span>
+                <span>Vision</span>
+                <span>Vision</span>
+                <span>Vision</span>
+                <span>Vision</span>
+            </div>
+            <div class="menu_ld caras">
+                <span>Team</span>
+                <span>Team</span>
+                <span>Team</span>
+                <span>Team</span>
+                <span>Team</span>
+                <span>Team</span>
+                <span>Team</span>
+                <span>Team</span>
+                <span>Team</span>
+            </div>
+            <div class="menu_ld caras">
+                <span>Contact</span>
+                <span>Contact</span>
+                <span>Contact</span>
+                <span>Contact</span>
+                <span>Contact</span>
+                <span>Contact</span>
+                <span>Contact</span>
+                <span>Contact</span>
+                <span>Contact</span>
+            </div>
+        </div>
+        <div class="menu_left_box unresp">
+            <div class="menu_dec_box ad05" id="menu_dec_box">
+                <div id="menu_dec_text" class="ad1">
+                    Vision
+                </div>
+            </div>
+            <div id="menu_dec_mini_text">
+                Azirle - is the company that will make your imaginations come true
+            </div>
+        </div>
+    </div>
+    <div id="menu_bg"></div>
+    <div id="main_video">
+        <div class="main_vid_box">
+            <video id="main_video_vid" src="media/AzirleVID.mp4" loop></video>
+        </div>
+    </div>
+    <div class="header_center_box">
+        <div id="header_title">
+            <div class="ht_dec"></div>
+            <div class="ht_dec"></div>
+            <div class="header_title_text ata" data-initial-ad="1">
+                We can realize
+            </div>
+        </div>
+    </div>
+    <div id="headp1_dec">
+        <div class="hpd" id="hpd1">
+            <div class="hpd_content_box">
+                <div class="hpd_text">
+                    Any Idea & Style
+                </div>
+            </div>
+        </div>
+        <div class="hpd" id="hpd2">
+            <div class="hpd_content_box">
+                <div class="hpd_text">
+                    Any Idea & Style
+                </div>
+            </div>
+        </div>
+        <div class="hpd" id="hpd3">
+            <div class="hpd_content_box">
+                <div class="hpd_text">
+                    Any Idea & Style
+                </div>
+            </div>
+        </div>
+        <div class="hpd" id="hpd4">
+            <div class="hpd_content_box">
+                <div class="hpd_text">
+                    Any Idea & Style
+                </div>
+            </div>
+        </div>
+        <div class="hpd" id="hpd5">
+            <div class="hpd_content_box">
+                <div class="hpd_text">
+                    Any Idea & Style
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="body_slider">
+        <div id="header" class="page">
+            
+        </div>
+        <div class="page" id="page1">
+            <div id="p1_content">
+                <div class="p1_box p1b1">
+                    <div class="p1_text atl" data-atl="afi" data-atlpage="2">
+                        <span>Just</span> <b>tell us</b> <span>more about</span> <div class="p1t_dec"></div> <span>your idea</span>
+                    </div>
+                    <div class="p1_text atl unresp" data-atl="afi" data-atlpage="2">
+                        <span>&</span> <span>Let</span> <span>us</span> <span>make</span> <span>it</span> <b>shine</b>
+                    </div>
+                </div>
+                <div class="p1_box p1b2">
+                    <div class="p1b2_top unresp">
+                        <a class="button" data-href="contacts.html">Let`s Link</a>
+                    </div>
+                    <div class="p1b2_bottom atl" data-atl="a6" data-atlpage="2">
+                        <img src="media/eyes.jpg" alt="">
+                    </div>
+                </div>
+                <div class="p1_box p1b3 resp">
+                    <div class="p1_text atl" data-atl="afi" data-atlpage="2">
+                        <span>&</span> <span>Let</span> <span>us</span> <span>make</span> <span>it</span> <b>shine</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page2">
+            <video id="main_video_link_bg" src="media/AzirleVID.mp4" autoplay loop muted class="movingMedia" data-movmed-page="3"></video>
+            <video id="main_video_link" src="media/AzirleVID.mp4" autoplay loop muted class="movingMedia" data-movmed-page="3"></video>
+        </div>
+        <div class="page" id="page3">
+            <div class="page_dec">
+                <span>01. about us</span>
+            </div>
+            <div class="p3_title">
+                <div class="p3t_left">
+                    <span class="atl ad05" data-atl="a1" data-atlpage="4"><span>Think ///</span></span>
+                    <div class="atl" data-atl="a6" data-atlpage="4"></div>
+                    <span class="atl ad1" data-atl="a1" data-atlpage="4"><span>Generate...</span></span>
+                </div>
+                <div class="p3t_right">
+                    <b class="atl ad1" data-atl="a4" data-atlpage="4">Create</b>
+                    <span class="atl ad15" data-atl="a4" data-atlpage="4">Create</span>
+                </div>
+            </div>
+            <div class="p3_box">
+                <div class="p3box_hb p3hb_img" >
+                    <img src="media/workplace.jpg" alt="" class="atl ad15" data-atl="a6" data-atlpage="4">
+                </div>
+                <div class="p3box_hb p3hb_text atl ad2" data-atl="a4" data-atlpage="4">
+                    Hi! We are Azirle - a team of digital designers aiming on creating, developing and realizing digital products of high quality
+                </div>
+            </div>
+            <div class="p3_box p3_box_last">
+                <div class="p3box_hb p3hb_text atl " data-atl="a4" data-atlpage="5">
+                    Contact us, tell us your project idea, and after consultation we will come up with digital solution that suits your idea best
+                </div>
+                <div class="p3box_hb p3hb_img">
+                    <div class="p3hb_imgbox">
+                        <img src="media/abs1.jpg" alt="" class="atl" data-atl="a6" data-atlpage="5">
+                    </div>
+                </div>
+            </div>
+            <div class="page_dec_end">
+                <div class="atl" data-atl="a6" data-atlpage="5"></div>
+            </div>
+        </div>
+        <div class="page" id="page4">
+            <div class="page_dec">
+                <span>02. our vision</span>
+                <div class="atl" data-atl="a6" data-atlpage="6"></div>
+            </div>
+            <div class="p4_h_box">
+                <div class="p4_text">
+                    <div class="p4t_box">
+                        <span class="atl" data-atl="a2" data-atlpage="6">Make Them</span>
+                        <div class="atl" data-atl="a6vw" data-atlpage="6"></div>
+                    </div>
+                    <div class="p4t_box">
+                        <div class="atl ad05" data-atl="a6" data-atlpage="6"></div>
+                        
+                        <span class="atl ad05" data-atl="afii" data-atlpage="6">
+                            <div class="arrow arrow-w atl ad1" data-atl="a6" data-atlpage="6"></div>
+                            Focused
+                        </span>
+                    </div>
+                    <div class="p4t_box">
+                        <a class="button wb" data-href="vision.html">
+                            Tell Me More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="p4_h_box">
+                <img src="media/abs3.jpg" alt="">
+            </div>
+        </div>
+        <div class="page" id="page5">
+            <div class="p5_content">
+                <div class="p5_box atl" data-atl="a4" data-atlpage="7" id="p5box1">
+                    <div class="p5b_bg">
+                        <img src="media/brand.jpg" alt="">
+                    </div>
+                    <div class="p5b_out_text">
+                        <h1>Branding</h1>
+                        <span>Seeking for the best way to show your brand?</span>
+                    </div>
+
+                </div>
+                <div class="p5_box atl ad01" data-atl="a4" data-atlpage="7" id="p5box2" >
+                    <div class="p5b_bg">
+                        <img src="media/website.jpg" alt="">
+                    </div>
+                    <div class="p5b_out_text">
+                        <h1>Websites</h1>
+                        <span>Want yourself a best website?</span>
+                    </div>
+
+                </div>
+                <div class="p5_box atl ad02" data-atl="a4" data-atlpage="7" id="p5box3">
+                    <div class="p5b_bg">
+                        <img src="media/abs2.jpg" alt="">
+                    </div>
+                    <div class="p5b_out_text">
+                        <h1>Visual ID</h1>
+                        <span>Maybe you want your brand to stand out</span>
+                    </div>
+
+                </div>
+                <div class="p5_box atl ad03" data-atl="a4" data-atlpage="7" id="p5box4">
+                    <div class="p5b_bg">
+                        <img src="media/marketing.jpg" alt="">
+                    </div>
+                    <div class="p5b_out_text">
+                        <h1>Marketing</h1>
+                        <span>Perhaps you are thinking of best marketing strategy</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page6">
+            <div class="page_between_closer"></div>
+            <a class="p6_title" data-href="team.html">
+                Our Team
+            </a>
+            <div class="p6_caras">
+                <div class="p6_wrapper">
+                    <div class="p6w_slider">
+                        <img src="media/group.jpg" alt="">
+                        <img src="media/people.jpg" alt="">
+                        <img src="media/team.jpg" alt="">
+                        <img src="media/abs3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="p6_wrapper">
+                    <div class="p6w_slider">
+                        <img src="media/abs1.jpg" alt="">
+                        <img src="media/group.jpg" alt="">
+                        <img src="media/people.jpg" alt="">
+                        <img src="media/team.jpg" alt="">
+                        <img src="media/people.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page_send">
+            <div class="p7_h_box">
+                <div class="p7_title">
+                    <span class="atl" data-atl="afi" data-atlpage="9" data-initial-ad="1"><span>So</span> <span>What</span> <span>Do You</span> <b>Think</b>?</span>
+                    <span class="atl ad1" data-atl="a4" data-atlpage="9">Let`s Connect! <div class="arrow atl ad15" data-atl="a6" data-atlpage="9"></div></span>
+                </div>
+            </div>
+            <div class="p7_h_box">
+                <form id="send_form" action="https://formsubmit.co/azirleinfo@gmail.com" method="POST">
+
+                    <!-- HoneyPot -->
+
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <!-- Captcha -->
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <!-- <input id="formSubNext" type="hidden" name="_next" value="http://127.0.0.1:5500/pages/success.html"> -->
+
+                    <div class="sf_inp_box">
+                        <label for="name_inp">Name</label>
+                        <input placeholder="Your Name" type="text" name="name" id="name_inp">
+                    </div>
+                    <div class="sf_inp_box">
+                        <label for="mail_inp">Email</label>
+                        <input placeholder="Your E-Mail" type="text" name="mail" id="mail_inp">
+                    </div>
+                    <div class="sf_inp_box">
+                        <label for="phone_inp">Phone</label>
+                        <input placeholder="x (xxx) xxx xx xx" type="text" name="phone" id="phone_inp">
+                    </div>
+                    <div class="sf_inp_box">
+                        <label for="request">Request</label>
+                        <textarea name="request" id="request_inp" rows="5" cols="10" wrap="soft" placeholder="I want..."></textarea>
+                    </div>
+                    <input id="form_submit_btn" type="submit" class="button"  value="Send">
+                </form>
+            </div>
+        </div>
+        <div id="footer_resp" class="resp">
+            <div class="foo_column">
+                <img src="media/azirle_logo.jpg" alt="logo">
+                <div class="foo_ct">
+                    <span>@ copyright 2025</span>
+                    <span>bir-bale bir narse</span>
+                </div>
+            </div>
+            <div class="foo_column">
+                <div class="foo_textbox">
+                    <div class="foo_tb_title">
+                        Menu
+                    </div>
+                    <div class="foo_tb_list">
+                        <a data-href="index.html">About Us</a>
+                        <a data-href="vision.html">Our Vision</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="team.html">Our Team</a>
+                        <a data-href="contacts.html">Contacts</a>
+                    </div>
+                </div>
+            </div>
+            <div class="foo_column">
+                <div class="foo_textbox">
+                    <div class="foo_tb_title">
+                        Contacts
+                    </div>
+                    <div class="foo_tb_list">
+                        <a href="">Tel: +7 777 777 77 77</a>
+                    </div>
+                </div>
+            </div>
+            <div class="foo_column">
+                <div class="foo_textbox">
+                    <div class="foo_tb_title">
+                        Social Links
+                    </div>
+                    <div class="foo_tb_list">
+                        <a href="https://www.instagram.com/a.zirle/" target="_blank">Instagram</a>
+                        <a href="https://dribbble.com/azirle" target="_blank">Dribble</a>
+                        <a href="https://web.telegram.org/a/#8159490690" target="_blank">Telegram</a>
+                        <a href="https://github.com/Azirle" target="_blank">GitHub</a>
+                        <a href="https://www.youtube.com/@Azirle" target="_blank">Youtube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="page_dec_end">
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="unresp">
+        <div class="foo_column">
+            <img src="media/azirle_logo.jpg" alt="logo">
+            <div class="foo_ct">
+                <span>@ copyright 2025</span>
+                <span>bir-bale bir narse</span>
+            </div>
+        </div>
+        <div class="foo_column">
+            <div class="foo_textbox">
+                <div class="foo_tb_title">
+                    Menu
+                </div>
+                <div class="foo_tb_list">
+                    <a data-href="index.html">About Us</a>
+                    <a data-href="vision.html">Our Vision</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="team.html">Our Team</a>
+                    <a data-href="contacts.html">Contacts</a>
+                </div>
+            </div>
+        </div>
+        <div class="foo_column">
+            <div class="foo_textbox">
+                <div class="foo_tb_title">
+                    Contacts
+                </div>
+                <div class="foo_tb_list">
+                    <a>Tel: +7 771 668 38 10</a>
+                    <a href="mailto:azirleinfo@gmail.com">azirleinfo@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="foo_column">
+            <div class="foo_textbox">
+                <div class="foo_tb_title">
+                    Social Links
+                </div>
+                <div class="foo_tb_list">
+                    <a href="https://www.instagram.com/a.zirle/" target="_blank">Instagram</a>
+                    <a href="https://dribbble.com/azirle" target="_blank">Dribble</a>
+                    <a href="https://web.telegram.org/a/#8159490690" target="_blank">Telegram</a>
+                    <a href="https://github.com/Azirle" target="_blank">GitHub</a>
+                    <a href="https://www.youtube.com/@Azirle" target="_blank">Youtube</a>
+                </div>
+            </div>
+        </div>
+        <div class="page_dec_end">
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>

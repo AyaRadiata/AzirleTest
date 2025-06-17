@@ -1877,21 +1877,15 @@ body:has(#main_video_link:hover) .mfht_play{
 .p5b_out_text > span{
     width: 100%;
 }
-.p5b_out_text > span:nth-of-type(1){
+.p5b_out_text > h1{
     font-size: 3em;
     font-weight: 700;
     color: var(--primary-color);
 }
-.p5b_out_text > span:nth-of-type(2){
+.p5b_out_text > span{
     font-size: 1em;
     color: lightgray;
     font-style: italic;
-}
-.p5b_out_text > span:nth-of-type(3){
-    font-size: 1em;
-    color: var(--primary-color);
-    width: 30%;
-    opacity: 0;
 }
 
 .p5b_bg{
